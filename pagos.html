@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mantenimiento y pagos | NFC Care</title>
+<meta name="description" content="Contrata el mantenimiento mensual de tu tarjeta NFC o gestiona y cancela tu suscripción actual.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header is-scrolled">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">NFC <span class="accent">Care</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="pagos.html">Mantenimiento</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ PLANES DE MANTENIMIENTO ============ -->
+  <section class="section" id="planes">
+    <div class="container">
+      <h1 class="section__title">Protege tu tarjeta NFC</h1>
+      <p class="section__lead">
+        Si tu negocio ya adquirió una tarjeta NFC de forma presencial, estos planes te dan soporte continuo:
+        Revisión del enlace, Configuración remota, Asistencia presencial, Cambio de tarjeta NFC totalmente
+        nueva. Cada pago es de manera mensual, gestionado de forma segura por Stripe.
+      </p>
+
+      <div class="plans">
+
+        <article class="plan">
+          <h3 class="plan__name">1 mes</h3>
+          <p class="plan__price"><span>5,99&nbsp;€</span> / mes</p>
+          <p class="plan__desc">Mantenimiento y soporte de la tarjeta durante 1 mes.</p>
+          <ul class="plan__features">
+            <li>Soporte</li>
+            <li>Revisión del enlace</li>
+            <li>Configuración remota</li>
+            <li>Sustitución por defecto</li>
+          </ul>
+          <a href="#" class="btn btn--outline plan__cta" data-stripe-link="STRIPE_PAYMENT_LINK_1_MONTH">Contratar</a>
+        </article>
+
+        <article class="plan">
+          <h3 class="plan__name">3 meses</h3>
+          <p class="plan__price"><span>4,99&nbsp;€</span> / mes</p>
+          <p class="plan__desc">Mantenimiento y soporte de la tarjeta durante 3 meses.</p>
+          <ul class="plan__features">
+            <li>Soporte</li>
+            <li>Revisión del enlace</li>
+            <li>Configuración remota</li>
+            <li>Sustitución por defecto</li>
+          </ul>
+          <a href="#" class="btn btn--outline plan__cta" data-stripe-link="STRIPE_PAYMENT_LINK_3_MONTHS">Contratar</a>
+        </article>
+
+        <article class="plan plan--featured">
+          <span class="plan__badge">Más elegido</span>
+          <h3 class="plan__name">6 meses</h3>
+          <p class="plan__price"><span>3,99&nbsp;€</span> / mes</p>
+          <p class="plan__desc">Mantenimiento y soporte de la tarjeta durante 6 meses.</p>
+          <ul class="plan__features">
+            <li>Soporte prioritario</li>
+            <li>Revisión del enlace</li>
+            <li>Configuración remota</li>
+            <li>Sustitución por defecto</li>
+          </ul>
+          <a href="#" class="btn btn--accent plan__cta" data-stripe-link="STRIPE_PAYMENT_LINK_6_MONTHS">Contratar</a>
+        </article>
+
+        <article class="plan">
+          <h3 class="plan__name">12 meses</h3>
+          <p class="plan__price"><span>2,49&nbsp;€</span> / mes</p>
+          <p class="plan__desc">Mantenimiento y soporte de la tarjeta durante todo el año.</p>
+          <ul class="plan__features">
+            <li>Soporte prioritario</li>
+            <li>Revisión del enlace</li>
+            <li>Configuración remota</li>
+            <li>Sustitución por defecto</li>
+          </ul>
+          <a href="#" class="btn btn--outline plan__cta" data-stripe-link="STRIPE_PAYMENT_LINK_12_MONTHS">Contratar</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CANCELAR / GESTIONAR SUSCRIPCIÓN ============ -->
+  <section class="section section--alt" id="cancelar">
+    <div class="container">
+      <div class="cancel-box">
+        <h2 class="section__title section__title--left">¿Ya tienes una suscripción activa?</h2>
+        <p class="cancel-box__text">
+          Puedes gestionar tu plan de mantenimiento en cualquier momento: consultar tu próximo pago, cambiar
+          tu método de pago o cancelar la suscripción cuando quieras, sin tener que escribirnos. Al entrar,
+          Stripe te pedirá el email con el que contrataste el plan para identificar tu suscripción.
+        </p>
+        <a href="#" class="btn btn--ghost" data-stripe-portal-link>Gestionar o cancelar mi suscripción</a>
+        <p class="cancel-box__note">
+          Si prefieres que lo hagamos nosotros, o tienes cualquier problema al acceder, también puedes
+          <a href="index.html#contacto" class="text-link">contactar con soporte</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <p class="logo">NFC <span class="accent">Care</span></p>
+      <p class="footer__tagline">Soluciones NFC para facilitar el acceso a reseñas de Google.</p>
+    </div>
+
+    <nav class="footer__links">
+      <a href="index.html">Inicio</a>
+      <a href="pagos.html">Mantenimiento</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="terminos.html">Términos</a>
+      <a href="reembolsos.html">Reembolsos y cancelaciones</a>
+    </nav>
+  </div>
+  <p class="footer__copy">© 2026 NFC Care. Todos los derechos reservados.</p>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
